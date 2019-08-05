@@ -6,7 +6,7 @@ export default class Todos extends Component {
     return (
       <React.Fragment>
         <h6>Todos</h6>
-        {tasks.map((elem, i) => <TodoItem key={i} task={elem} />)}
+        {tasks.map((elem, i) => <TodoItem key={i} task={elem} change={this.props.changedata} delete={this.props.deletedata} />)}
       </React.Fragment>
     );
   }
